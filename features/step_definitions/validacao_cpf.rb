@@ -15,7 +15,7 @@ Então('o sistema deve validar o CPF inserido') do
 end
 
 Quando('preencho o campo com {string}') do |cpf|
-  @home_page.cmp_cpf_invalido(cpf)
+  @home_page.cmp_cpf(cpf)
 end
 
 Então('o sistema deve exibir a {string}') do |mensagem|

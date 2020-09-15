@@ -15,7 +15,7 @@ class HomePage
     find('#btn-buttonLogin').click
   end
 
-  def cmp_cpf_invalido(cpf)
+  def cmp_cpf(cpf)
     find('input[name="username"]').set cpf
   end
 
