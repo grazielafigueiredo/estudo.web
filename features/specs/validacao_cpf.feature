@@ -10,10 +10,15 @@ Contexto: Acesso ao site
     Dado que acesso o site Livelo
 
 @cpf_valido
-Cenário: validação do CPF com dado faker
+Esquema do Cenário: validação do CPF
     Quando clico em entrar 
-    E preencho o campo CPF
+    E preencho o campo com <cpf_valido>
     Então o sistema deve validar o CPF inserido
+
+    Exemplos:
+    | cpf_valido     |
+    | "000000096-52" |
+
 
 @cpf_invalido
 Esquema do Cenário: validação do CPF inválido
