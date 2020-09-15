@@ -9,10 +9,6 @@ Quando('clico em entrar') do
   @home_page.button_entrar
 end
 
-Quando('preencho o campo CPF') do
-  @home_page.cmp_cpf_faker
-end
-
 Então('o sistema deve validar o CPF inserido') do
   icon = @home_page.icon_success
   expect(icon.visible?).to be true

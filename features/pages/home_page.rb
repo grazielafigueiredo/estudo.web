@@ -15,10 +15,6 @@ class HomePage
     find('#btn-buttonLogin').click
   end
 
-  def cmp_cpf_faker
-    find('input[name="username"]').set Faker::CPF.numeric
-  end
-
   def cmp_cpf_invalido(cpf)
     find('input[name="username"]').set cpf
   end
