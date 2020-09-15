@@ -1,0 +1,5 @@
+default: -p hml -p headless -p pretty
+pretty: --format pretty
+hml: ENV_TYPE=hml
+chrome: BROWSER=chrome
+headless: BROWSER=headless
